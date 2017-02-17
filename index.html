@@ -5,7 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Triangle Tracker</title>
+    <title>Class Tracker</title>
   </head>
   <body>
     <div class="container">
@@ -26,46 +26,106 @@
       <br/>
       <br/>
       <br/>
-        <div class="well">
-          <p>Having trouble deciding what code class track to take at epicodus? Have no fear! Take this brief survey to find out what track is best suited to your needs and wants.</p>
-        </div>
-        <div class="row">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div class="well">
+        <p>Having trouble deciding what code class track to take at epicodus? Have no fear! Take this brief survey to find out what track is best suited to your needs and wants.</p>
+      </div>
+      <div class="row">
         <div class="col-md-6 col-sx-6">
           <div class="panel panel-info">
             <div class="panel-heading">Class Tracks!</div>
             <div class="panel-body">
-              <ul>
+              <ul id="classes">
                 <li>Ruby/Rails</li>
                 <li>PHP/Drupal</li>
                 <li>Java/Android</li>
                 <li>CSS/Design</li>
                 <li>C#/.NET</li>
               </ul>
-              <!-- <div>
-                <img id="epi" src="epicodus.png">
-              </div> -->
+              <div>
+                <img class="pull-right" id="epi" src="epicodus.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">Let's collect some basic <strong><em>info</em></strong>.</div>
+            <div class="panel-body">
+              <form id="basic">
+                <div class="form-group">
+                  <label for="name">Enter Your Name</label>
+                  <input id="name" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="city">Enter your city of preference (Portland or Seattle)</label>
+                  <input id="city" class="form-control" type="text">
+                </div>
+                <div id="but"><button type="sumbit" class="btn">Enter!</button></div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-xs-6">
-        <div class="panel panel-default">
-          <div class="panel-body">
-        <h3>First let's collect some basic <strong><em>info</em></strong>.</h3>
-        <form id="tri">
-          <div class="form-group">
-            <label for="name">Enter Your Name</label>
-            <input id="name" class="form-control" type="text">
+
+      <form id="choice">
+        <div class="row">
+          <div class="col-md-3">
+
+            <div class="panel-body pull-left">
+              <p>Do you want to start soon or are you willing to wait?</p>
+              <select id="rush">
+                <option value="1">Start Soon</option>
+                <option value="2">Wait</option>
+              </select>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="city">Enter your city of preference (Portland or Seattle)</label>
-            <input id="city" class="form-control" type="text">
+          <div class="col-md-3">
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="color" value="blue">Blue
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="color" value="blue">Red
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="color" value="blue">Green
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="color" value="blue">Black
+              </label>
+            </div>
           </div>
-          <div id="but"><button type="sumbit" class="btn">Enter!</button></div>
-        </form>
-      </div>
+          <div class="col-md-3">
+            <div class="panel-body">
+              <p>Which do you prefer?</p>
+              <select id="hobbie">
+                <option value="1">Painting</option>
+                <option value="2">Puzzles</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="panel-body">
+              <p>What type of learning style do you prefer?</p>
+              <select id="learn">
+                <option value="1">Reading</option>
+                <option value="2">Watching</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
-      </div>
-    </div>
-      </div>
   </body>
 </html>
