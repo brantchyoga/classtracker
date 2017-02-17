@@ -35,3 +35,12 @@ body {
 .panel {
   width:95%;
 }
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font: bold 20px fantasy;
+}
+.row {
+  border-bottom: 1px solid black;
+}
