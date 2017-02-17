@@ -20,26 +20,33 @@ $(function() {
     console.log(hobbie);
     event.preventDefault();
     $("#inputname").text(name);
-      if (color=="blue"){
-        $("#inputclasstrack").text("PHP/Drupal track");
-        $("#hidden").show();
-      } else if (color === "red") {
-        $("#inputclasstrack").text("Ruby/Rails track");
-        $("#hidden").show();
-      } else if (color === "black") {
-        $("#inputclasstrack").text("C#/.NET track");
-        $("#hidden").show();
-      } else if (city==="seattle"&&hobbie==="paint") {
-        $("#inputclasstrack").text("CSS/Design track(but this track is only currently available in Portland!)");
-        $("#hidden").show();
-      } else if (hobbie==="paint") {
-        $("#inputclasstrack").text("CSS/Design track");
-        $("#hidden").show();
-      } else if (city==="seattle"&&color === "green") {
-        $("#inputclasstrack").text("Java/Android track(but this track is only currently available in Portland!)");
-        $("#hidden").show();
+    if (color=="blue"){
+      $("#inputclasstrack").text("PHP/Drupal track");
+      $("#hidden").show();
+    } else if (color === "red") {
+      $("#inputclasstrack").text("Ruby/Rails track");
+      $("#hidden").show();
+    } else if (color === "black") {
+      $("#inputclasstrack").text("C#/.NET track");
+      $("#hidden").show();
+    } else if (city==="seattle"&&hobbie==="paint") {
+      $("#inputclasstrack").text("CSS/Design track(but this track is only currently available in Portland!)");
+      $("#hidden").show();
+    } else if (hobbie==="paint") {
+      $("#inputclasstrack").text("CSS/Design track");
+      $("#hidden").show();
+    } else if (city==="seattle"&&color === "green") {
+      $("#inputclasstrack").text("Java/Android track(but this track is only currently available in Portland!)");
+      $("#hidden").show();
+    } else if (color==="green"){
+      $("#inputclasstrack").text("Java/Android track")
+      $("#hidden").show();
+    } else {
+      $("#inputclasstrack").text("C#/.NET track");
+      $("#hidden").show();
     }
-
+  });
+});
     // if (hobbie === "paint") {
     //   $("#inputclasstrack").text("CSS/Design");
     //   $("#hidden").show();
@@ -58,5 +65,3 @@ $(function() {
     // } else {
     //   alert("Make sure all fields of the survey are filled out correctly!!!")
     // }
-  });
-});

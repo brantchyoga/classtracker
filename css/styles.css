@@ -38,6 +38,7 @@ body {
 }
 .panel {
   width:100%;
+  opacity: .75;
 }
 .btn {
   display: block;
@@ -48,6 +49,18 @@ body {
 }
 .row {
   border-bottom: 1px solid black;
+}
+.see {
+  text-decoration: underline;
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 5px;
+  margin-top: 5%;
+  background-color: white;
+  opacity: .75;
+}
+.radio {
+  font: bold 20px white;
 }
 #hidden {
   display: none;
