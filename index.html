@@ -70,17 +70,15 @@
         </div>
         <div class="row">
           <div class="col-md-3">
-
             <div class="panel-body pull-left">
               <p>Do you want to start soon or are you willing to wait?</p>
               <select id="rush">
-                <option value="1">Start Soon</option>
-                <option value="2">Wait</option>
+                <option value="rush">Start Soon</option>
+                <option value="wait">Wait</option>
               </select>
             </div>
           </div>
           <div class="col-md-3">
-
             <div class="radio">
               <label>
                 <input type="radio" name="color" value="blue">Blue
@@ -88,17 +86,17 @@
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="color" value="blue">Red
+                <input type="radio" name="color" value="red">Red
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="color" value="blue">Green
+                <input type="radio" name="color" value="green">Green
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="color" value="blue">Black
+                <input type="radio" name="color" value="black">Black
               </label>
             </div>
           </div>
@@ -106,8 +104,8 @@
             <div class="panel-body">
               <p>Which do you prefer?</p>
               <select id="hobbie">
-                <option value="1">Painting</option>
-                <option value="2">Puzzles</option>
+                <option value="paint">Painting</option>
+                <option value="puzzle">Puzzles</option>
               </select>
             </div>
           </div>
@@ -123,6 +121,9 @@
         </div>
         <div id="but"><button type="sumbit" class="btn">Enter!</button></div>
       </form>
+      <div id="hidden">
+        <p>Congrats <span id="inputname"></span>, the data you have entered shows that you would like to be on the <span id="inputclasstrack"></span> track. Contact epicodus to find out more information on the class track!</p>
+      </div>
     </div>
   </body>
 </html>

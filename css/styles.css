@@ -44,3 +44,7 @@ body {
 .row {
   border-bottom: 1px solid black;
 }
+#hidden {
+  display: none;
+  text-align: center;
+}
