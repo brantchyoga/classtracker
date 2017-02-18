@@ -54,6 +54,7 @@ body {
   text-decoration: underline;
   font-size: 20px;
   border: 2px solid white;
+  border-radius: 5px;
   padding: 5px;
   margin-top: 5%;
   background-color: white;
@@ -62,7 +63,20 @@ body {
 .radio {
   font: bold 20px white;
 }
+#sm {
+  width: 25%;
+  float: right;
+  display: block;
+  margin-right: 20px;
+  margin-top: -50px;
+}
 #hidden {
   display: none;
   text-align: center;
+  background-color: white;
+  opacity: .75;
+  font: bold 20px black;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
 }
